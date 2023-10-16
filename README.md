@@ -1,6 +1,6 @@
-# Devfest 2022 - site
+# Devfest Bahia 2023 - site
 
-website (http://ne.devfest.com.br)
+website (http://ba.devfest.com.br)
 
 ## Requirements
 1. NodeJS
