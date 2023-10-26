@@ -24,8 +24,8 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-   BrowserModule,
-   YouTubePlayerModule,
+    BrowserModule,
+    YouTubePlayerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
