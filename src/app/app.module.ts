@@ -4,22 +4,24 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EquipeComponent } from './equipe/equipe.component';
-import { IngressosComponent } from './ingressos/ingressos.component';
+import { ContadorComponent } from './contador/contador.component';
 import { PalestrantesComponent } from './palestrantes/palestrantes.component';
-import { SobreComponent } from './sobre/sobre.component';
+import { InscricaoComponent } from './inscricao/inscricao.component';
 import { PatrocinadoresComponent } from './patrocinadores/patrocinadores.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { FooterComponent } from './footer/footer.component';
+import { OrganizacaoComponent } from './organizacao/organizacao.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EquipeComponent,
-    IngressosComponent,
+    ContadorComponent,
     PalestrantesComponent,
-    SobreComponent,
+    InscricaoComponent,
     PatrocinadoresComponent,
-    FooterComponent
+    FooterComponent,
+    OrganizacaoComponent
   ],
   imports: [
     BrowserModule,

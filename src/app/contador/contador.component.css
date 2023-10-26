@@ -1,4 +1,6 @@
 .contador-container {
+    margin: 0 25% 0;
+    width: 45%;
     background-color: black;
     color: white;
     border-radius: 10px;

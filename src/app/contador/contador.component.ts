@@ -3,11 +3,11 @@ import { interval } from 'rxjs';
 import { Subscription } from 'rxjs/internal/Subscription';
 
 @Component({
-  selector: 'app-ingressos',
-  templateUrl: './ingressos.component.html',
-  styleUrls: ['./ingressos.component.css']
+  selector: 'app-contador',
+  templateUrl: './contador.component.html',
+  styleUrls: ['./contador.component.css']
 })
-export class IngressosComponent implements OnInit, OnDestroy {
+export class ContadorComponent implements OnInit, OnDestroy {
   private countdownSubscription!: Subscription;
   public audioPlayer: any;
   private endDate: Date = new Date('2023-11-25T00:00:00');
