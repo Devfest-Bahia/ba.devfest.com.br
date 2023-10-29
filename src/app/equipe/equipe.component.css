@@ -1,13 +1,27 @@
+.team-organizer-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  width: 100%;
+  max-width: 752px;
+}
+
 .team-organizer-card {
-    width: 250px;
+    width: 232px;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
+
+
+
     text-align: center;
     transition: box-shadow 0.3s ease-in-out;
   }
   
-  .team-organizer-card.hovered {
+  .team-organizer-card:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   }
   

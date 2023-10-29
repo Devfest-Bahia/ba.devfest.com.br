@@ -1,68 +1,79 @@
-.contador-container {
-    margin: 0 25% 0;
-    width: 45%;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-  }
+.countdown-container {
+  display: flex;
+  flex-direction: column;
 
-  .countdown {
-    font-size: 24px;
-    margin: 20px;
-    text-align: center;
-  }
+  font-size: 1.5rem;
+  text-align: center;
 
-  .grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .grid-item {
-    width: 48%; /* 48% para deixar um pequeno espaço entre os itens */
-    height: 200px;
-    margin-bottom: 1%;
-  }
-  
-  .item1 {
-    background-color: #4285f4; 
-    color: white;
-    border-radius: 10px;
-    text-align: center;
-    width: 260px;
-  }
-  .title{
-font-size: 48px;
-font-weight: 600;
-  }
+}
 
-  .subtitle{
+.countdown-title {
+  margin-bottom: 2rem;
+}
 
-font-size: 30px;
+.grid-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 260px;
+  height: 200px;
+}
+
+.item1 {
+  background-color: #2B83FC;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  width: 260px;
+}
+.title {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 30px;
+}
+
+.item2 {
+  background-color: #EA4335;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  width: 260px;
+}
+
+.item3 {
+  background-color: #00AC47;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  width: 260px;
+}
+
+.item4 {
+  background-color: #F9AB00;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  width: 260px;
+}
+
+@media (max-width: 1104px) {
+  .countdown-container {
+    width: 100%;
+    max-width: 536px;
+    justify-content: center;
   }
-  
-  .item2 {
-    background-color: #e74c3c;
-    color: white;
-    border-radius: 10px;
-    text-align: center;
-    width: 260px;
-  }
-  
-  .item3 {
-    background-color: #34a853; 
-    color: white;
-    border-radius: 10px;
-    text-align: center;
-    width: 260px;
-  }
-  
-  .item4 {
-    background-color: #f39c12; 
-    color: white;
-    border-radius: 10px;
-    text-align: center;
-    width: 260px;
-  }
+}

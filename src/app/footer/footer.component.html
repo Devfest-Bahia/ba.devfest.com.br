@@ -1,16 +1,24 @@
-
 <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-links">
-          <a routerLink="/">Início</a>
-          <a routerLink="/patrocinador">Patrocinador</a>
-          <!-- <a routerLink="/sobre">Sobre</a> -->
-          <a href="https://www.sympla.com.br/evento/devfest-bahia-2023/2197770?">Inscrições</a>
-        </div>
-        <div class="linkedin">
-          <img src="assets/devfest_logo-bg.png" alt="LinkedIn">
-        </div>
-      </div>
-    </div>
-  </footer>
+  <div class="footer-content">
+
+    <nav class="navbar navbar-top">
+      <button class="nav-item" role="button" (click)="
+            navigateToExternalUrl(
+              'https://www.sympla.com.br/evento/devfest-bahia-2023/2197770?referrer=https://ba.devfest.com.br/'
+            )
+          ">
+        Inscreva-se
+      </button>
+      <button class="nav-item" role="button" (click)="
+            navigateToExternalUrl(
+              'https://drive.google.com/file/d/1h7f5Abt01t93f76d99QDq5btZ3I2djGh/view'
+            )
+          ">
+        Patrocine
+      </button>
+      <!-- <a routerLink="/equipe" class="colort">Organizadores</a> -->
+    </nav>
+    <img class="logo devfest-white-logo" alt="Devfest Logo" src="../assets/logo-white.svg" role="button"
+      (click)="navigateToExternalUrl('https://www.sympla.com.br/evento/devfest-bahia-2023/2197770?referrer=https://ba.devfest.com.br/')" />
+  </div>
+</footer>

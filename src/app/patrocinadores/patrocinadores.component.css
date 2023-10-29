@@ -1,107 +1,74 @@
-
-:host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 8px 0;
-  }
-
-  p {
-    margin: 0;
-  }
-
-  .spacer {
-    flex: 1;
-  }
-
-  .toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
+  .sponsors-container-section {
     display: flex;
-    align-items: center;
-    background-color: #dddee0;
-    color: white;
-    font-weight: 600;
-  }
-
-  .toolbar img {
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo {
-    height: 40px;
-    margin: 0 8px;
-  }
-
-  .toolbar #youtube-logo {
-    height: 40px;
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo:hover,
-  .toolbar #youtube-logo:hover {
-    opacity: 0.8;
-  }
-
-  .content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    gap: 5.125rem;
 
+    margin: 0 16px 0 16px;
+    width: 100%;
+    max-width: 752px;
+  }
 
+  .sponsors-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5.125rem;
+
+    width: 100%;
+    margin: 0 16px 0 16px;
   }
-  .padding{
-    margin-top: 40px;
-  }
-  .contador-container {
-    background-color: black;
-    color: white;
+
+  .call-sponsors-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     border-radius: 10px;
     padding: 20px;
-    width: 90%;
+    width: 100%;
+
+    background-color: #2B83FC;
+    color: white;
+  }
+
+  .call-sponsors-title {
+    font-size: 1.5rem;
     text-align: center;
   }
-  .title{
-    font-size: 40px;
+
+  .sponsors-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  .subtitle{
-font-size: 20px;
-margin:20px;
+
+  .support-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  .promotecnology{
+
+  .promotecnology {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
   }
-.organizers-logo{
+
+  .organizers-logo {
     width: 200px;
-}
-.organizers-logo-sm{
+  }
+
+  .organizers-logo-sm {
     width: 150px;
 
-}
-  .midiakit{
-    color:#34a853;
-    font-size: 18px;
   }
+
   svg.material-icons {
     height: 24px;
     width: auto;
@@ -191,14 +158,13 @@ margin:20px;
   }
 
   a,
-  a:visited,
-  a:hover {
-    color: #1976d2;
+  a:visited {
+    color: #F9AB00;
     text-decoration: none;
   }
 
   a:hover {
-    color: #125699;
+    color: #ffd986;
   }
 
   .terminal {
@@ -228,7 +194,7 @@ margin:20px;
   }
 
   .terminal pre {
-    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
     color: white;
     padding: 0 1rem 1rem;
     margin: 0;
@@ -266,42 +232,9 @@ margin:20px;
     align-items: center;
   }
 
-  .github-star-badge {
-    color: #24292e;
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    padding: 3px 10px;
-    border: 1px solid rgba(27,31,35,.2);
-    border-radius: 3px;
-    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
-    margin-left: 4px;
-    font-weight: 600;
-  }
-
-  .github-star-badge:hover {
-    background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
-    border-color: rgba(27,31,35,.35);
-    background-position: -.5em;
-  }
-
-  .github-star-badge .material-icons {
-    height: 16px;
-    width: 16px;
-    margin-right: 4px;
-  }
-
-  svg#clouds {
-    position: fixed;
-    bottom: -160px;
-    left: -230px;
-    z-index: -10;
-    width: 1920px;
-  }
-
-  /* Responsive Styles */
   @media screen and (max-width: 767px) {
-    .card-container > *:not(.circle-link) ,
+
+    .card-container>*:not(.circle-link),
     .terminal {
       width: 100%;
     }

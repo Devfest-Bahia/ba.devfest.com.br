@@ -1,40 +1,52 @@
-
 <!-- Toolbar -->
-<div class="toolbar" role="banner">
-  <img class="logotxt"
-    alt="devfest Logo"
-    src="assets/devfest_logo-bg.png"
-  />
-  
-    <div class="spacer"></div>
-    <div class="header">
-      <a routerLink="/ingressos" class="colort">Inscreva-se</a>
-      <a routerLink="/patrocine" class="colort">Patrocine</a>
+<header class="header" role="banner">
+  <div class="header-content">
+    <img class="logo devfest-white-logo" alt="Devfest Logo" src="../assets/logo-white.svg" role="button"
+      (click)="navigateToExternalUrl('https://www.sympla.com.br/evento/devfest-bahia-2023/2197770?referrer=https://ba.devfest.com.br/')" />
+    <nav class="navbar navbar-top">
+      <button class="nav-item" role="button" (click)="
+          navigateToExternalUrl(
+            'https://drive.google.com/file/d/1h7f5Abt01t93f76d99QDq5btZ3I2djGh/view'
+          )
+        ">
+        Patrocine
+      </button>
+      <button class="nav-item" role="button" (click)="
+          navigateToExternalUrl(
+            'https://www.sympla.com.br/evento/devfest-bahia-2023/2197770?referrer=https://ba.devfest.com.br/'
+          )
+        ">
+        Inscreva-se
+      </button>
       <!-- <a routerLink="/equipe" class="colort">Organizadores</a> -->
-    
-    </div>
-   
-</div>
-<!-- <img class="imgbanner"
-  width="100%"
-  alt="devfest Logo"
-  src="assets/devfest_logo-bg.png"
-  /> -->
-  <div class="content">
-    <div class="banner" >
-      <img src="assets/bannerdev.png">
-      <!-- <img style="margin-bottom: -80px; width: 400px;" src="assets/DF23_PA_At_Devfest_Announcement_v01.gif"> -->
+    </nav>
+  </div>
+</header>
 
-    </div>
-</div>
-<div class="content" role="main">
+<main>
+  <div class="banner-container" role="button" (click)="
+      navigateToExternalUrl(
+        'https://www.sympla.com.br/evento/devfest-bahia-2023/2197770?referrer=https://ba.devfest.com.br/')">
+    <img class="banner" alt="Devfest Bahia banner" [src]="bannerImage" />
+  </div>
 
-  
-</div>
-<app-contador></app-contador>
-<app-inscricao></app-inscricao>
-<app-patrocinadores></app-patrocinadores>
-<app-organizacao></app-organizacao>
-<!-- <app-equipe></app-equipe> -->
-<!-- <app-palestrantes></app-palestrantes> -->
-<app-footer></app-footer>
+  <app-contador />
+  <!-- <div class="content" role="main"></div> -->
+  <section class="event-info-section">
+    <div class="event-info-container">
+      <h1>25 de Novembro de 2023</h1>
+      <h2>Evento presencial, UNIME Lauro de Freitas</h2>
+      <p>
+        Av.Luiz Tarquínio Pontes, 600 - Fazenda Pitangueira, Lauro de Freitas -
+        BA, 42700-000
+      </p>
+    </div>
+  </section>
+  <app-inscricao />
+  <app-patrocinadores />
+  <app-organizacao />
+  <app-equipe></app-equipe>
+  <!-- <app-palestrantes></app-palestrantes> -->
+</main>
+
+<app-footer />
