@@ -1,27 +1,17 @@
-
-  
 <div class="content" role="main">
-  <div class="card-video"> 
-    <youtube-player
-      videoId="Gou_5qTPzwI"
-      suggestedQuality="highres"
-      [width]="680"
-      [startSeconds]="00"
-      [endSeconds]="60">
-    </youtube-player>
+  <div class="card-container">
+    <div class="card-video" #cardVideo>
+      <youtube-player videoId="Gou_5qTPzwI" suggestedQuality="highres" [width]="widthVideo" [height]="heightVideo"
+        [startSeconds]="00" [endSeconds]="60" />
+    </div>
     <div class="description">
       <p class="whatsdev">
-          {{ description }}
+        {{ description }}
       </p>
-      <p class="whatsdev">
-          {{moredevfest}}
+      <p class="whatsdev last">
+        {{ moredevfest }}
       </p>
       <button (click)="subscribe()" class="btnInscription">Inscreva-se</button>
-    </div>  
-  </div> 
+    </div>
+  </div>
 </div>
-
-
-
-
-

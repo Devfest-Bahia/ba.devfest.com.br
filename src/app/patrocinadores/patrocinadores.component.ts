@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './patrocinadores.component.html',
   styleUrls: ['./patrocinadores.component.css']
 })
+
 export class PatrocinadoresComponent {
 
 }

@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PalestrantesComponent } from './palestrantes/palestrantes.component';
 import { EquipeComponent } from './equipe/equipe.component';
-import { PatrocinadoresComponent } from './patrocinadores/patrocinadores.component';
-import { BrowserModule } from '@angular/platform-browser';
 import { InscricaoComponent } from './inscricao/inscricao.component';
+import { PalestrantesComponent } from './palestrantes/palestrantes.component';
+import { PatrocinadoresComponent } from './patrocinadores/patrocinadores.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'/sobre', pathMatch:'full'},
