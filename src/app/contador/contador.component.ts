@@ -10,7 +10,7 @@ import { Subscription } from 'rxjs/internal/Subscription';
 export class ContadorComponent implements OnInit, OnDestroy {
   private countdownSubscription!: Subscription;
   public audioPlayer: any;
-  private endDate: Date = new Date('2023-11-25T00:00:00');
+  private endDate: Date = new Date('2023-11-25T08:00:00');
   dataEvento: Date = new Date('2023-11-25'); 
   diasRestantes: number | undefined;
   days: number | undefined;

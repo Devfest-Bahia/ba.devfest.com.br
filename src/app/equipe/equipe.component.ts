@@ -5,6 +5,7 @@ import { Component, Input } from '@angular/core';
   templateUrl: './equipe.component.html',
   styleUrls: ['./equipe.component.css']
 })
+
 export class EquipeComponent {
   @Input() organizer: any; // Adapte conforme necessário
   isHovered = false;
