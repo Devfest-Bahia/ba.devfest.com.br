@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-palestrantes',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./palestrantes.component.css']
 })
 export class PalestrantesComponent {
+  isHovered = false;
 
+  onMouseOver() {
+    this.isHovered = true;
+  }
+
+  onMouseOut() {
+    this.isHovered = false;
+  }
 }

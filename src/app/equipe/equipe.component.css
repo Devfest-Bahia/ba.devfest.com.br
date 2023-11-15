@@ -1,4 +1,4 @@
-.team-organizer-container{
+.team-organizer-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,30 +10,36 @@
 }
 
 .team-organizer-card {
-    width: 232px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+  width: 232px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 
 
 
-    text-align: center;
-    transition: box-shadow 0.3s ease-in-out;
-  }
-  
-  .team-organizer-card:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  }
-  
+  text-align: center;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.team-organizer-card:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.organizer-details {
   .avatar {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin-bottom: 10px;
   }
-  
-  .member-details {
-    color: #333;
+
+  .name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
   }
-  
-  
+}
+
+.member-details {
+  color: #333;
+}
